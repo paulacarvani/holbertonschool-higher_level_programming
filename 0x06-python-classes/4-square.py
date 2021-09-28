@@ -15,12 +15,12 @@ class Square:
         """New construct with public parameters for calculates the area
         size elevates at 2"""
         return self.__size ** 2
-    
+
     @property
     def size(self):
         """Getter for size"""
         return self.__size
-    
+
     @size.setter
     def size(self, value):
         """Setter for size with conditions"""
