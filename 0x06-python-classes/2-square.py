@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This module creates a class named square with a private atribute size 
+"""This module creates a class named square with a private atribute size
     and diferent conditions"""
 
 
