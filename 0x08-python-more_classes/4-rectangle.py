@@ -4,7 +4,7 @@ private atribute width and height with his getter and setter
 also with conditionals of typeerror and valuerror
 Public instance method for calculates area and perimeter
 Uses a print() and str() for a string representation
-Uses a repr return a string representation of the rectangle 
+Uses a repr return a string representation of the rectangle
 to be able to recreate a new instance by using eval()"""
 
 
