@@ -66,7 +66,7 @@ class Rectangle:
         total = ""
         if self.__width != 0 and self.__height != 0:
             total += '\n'.join(str(self.print_symbol) * self.__width
-                                for j in range(self.__height))
+                               for j in range(self.__height))
         return total
 
     def __repr__(self):
