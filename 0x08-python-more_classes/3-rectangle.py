@@ -57,6 +57,6 @@ class Rectangle:
             return repr
         for i in range(self.__height):
             repr += ("#" * self.__width)
-            if i is not self.__height -1:
+            if i is not self.__height - 1:
                 repr += "\n"
         return repr
