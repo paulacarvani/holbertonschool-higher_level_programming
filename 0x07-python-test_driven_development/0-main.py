@@ -8,10 +8,10 @@ print(add_integer(6.3, 8.5))
 print(add_integer(3.2, 2))
 print(add_integer(4, 1.7))
 try:
-    print(add_integer(4, "School"))
+    print(add_integer("Hello", 2))
 except Exception as e:
     print(e)
 try:
-    print(add_integer(None))
+    print(add_integer(1, "Holbies"))
 except Exception as e:
     print(e)
