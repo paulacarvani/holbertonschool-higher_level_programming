@@ -40,10 +40,10 @@ If they are combined floats and integers
 Edge cases
 When one arg is not int or float
 
-    >>> add_integer(a, 2)
+    >>> add_integer("Hello", 2)
     Traceback (most recent call last):
 	TypeError: a must be an integer
 
-    >>> add_integer(1, b)
+    >>> add_integer(1, "Holbies")
     Traceback (most recent call last):
 	TypeError: b must be an integer
