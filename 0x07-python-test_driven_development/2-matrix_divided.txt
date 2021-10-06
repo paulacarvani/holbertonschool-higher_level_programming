@@ -1,0 +1,16 @@
+The ``Matrix Divided`` module
+=============================
+
+Using ``matrix_divided``
+------------------------
+
+This is a text file in reStructuredText format.
+First ``matrix_divided`` from the ``Matrix Divided`` module:
+
+    >>> matrix_divided = __import__("2-matrix_divided").matrix_divided
+
+Now use it:
+
+    >>> m = [[1.1, 2.2, 3.3]]
+    >>> matrix_divided(m, 2)
+    [[0.55, 1.1, 1.65]]
