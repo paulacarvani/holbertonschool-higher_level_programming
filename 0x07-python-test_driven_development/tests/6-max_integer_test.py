@@ -15,7 +15,7 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEquals(max_integer([0, 0, 0]), 0)
         self.assertEquals(max_integer([1, 0, 0]), 1)
         self.assertEquals(max_integer([0, 1, 0]), 1)
-        self.assertEquals(max_integer([8), 8)
+        self.assertEquals(max_integer([8]), 8)
 
     def test_wrong_type(self):
         """Test Cases when Raises"""
