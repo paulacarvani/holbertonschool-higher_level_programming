@@ -10,5 +10,4 @@ def lazy_matrix_mul(m_a, m_b):
     """Function that returns the mul of
     two matrices using the module numpy"""
 
-    mul = np.matmul(m_a, m_b)
-    return mul
+    return (np.matmul(m_a, m_b))
