@@ -14,27 +14,15 @@ Now use it:
     >>> say_my_name("Paula", "Carvajal")
     My name is Paula Carvajal
 
-    >>> say_my_name("Paula", "C")
-    My name is Paula C
-
-    >>> say_my_name("Paula", 12)
-    Traceback (most recent call last):
-    TypeError: last_name must be a string
-
     >>> say_my_name("Paula")
     My name is Paula 
 
-    >>> say_my_name("", "")
-    My name is  
+Take cases
+============
 
-    >>> say_my_name("")
-    My name is  
-
-    >>> say_my_name("", "Carvajal")
-    My name is  Carvajal
-
-    >>> say_my_name("Paula", "")
-    My name is Paula  
+    >>> say_my_name(12, "Carvani")
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
 
     >>> say_my_name("Coco", ["a","b"])
     Traceback (most recent call last):
