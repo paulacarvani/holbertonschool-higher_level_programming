@@ -32,7 +32,7 @@ Now use it:
     Traceback (most recent call last):
     ZeroDivisionError: division by zero
 
-    >>> m = [[1, 2, 3],[4, "a", 6]]
+    >>> m = [[1, 2, 3], [4, "a", 6]]
     >>> matrix_divided(m, 2)
     Traceback (most recent call last):
     TypeError: matrix must be a matrix (list of lists) of integers/floats

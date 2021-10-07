@@ -17,13 +17,13 @@ Now use it:
     >>> add_integer(1, 2)
     3
 
-    >>> add_integer(7, 20)
-    27
+    >>> add_integer(2)
+    100
+
+    >>> add_integer(8, -3)
+    5
 
 When the args are floats
-
-    >>> add_integer(1.5, 2.8)
-    3
 
     >>> add_integer(6.3, 8.5)
     14

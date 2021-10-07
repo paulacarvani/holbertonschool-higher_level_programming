@@ -1,0 +1,37 @@
+The ``Say my Name`` module
+=============================
+
+Using ``say my name``
+------------------------
+
+This is a text file in reStructuredText format.
+First ``say_my_name`` from the ``3-say_my name`` module:
+
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Now use it:
+
+    >>> say_my_name("Paula", "Carvajal")
+    My name is Paula Carvajal
+
+    >>> say_my_name("Paula", "C")
+    My name is Paula C
+
+    >>> say_my_name("Paula", 12)
+    Traceback (most recent call last):
+    TypeError: last_name must be a string
+
+    >>> say_my_name("Paula")
+    My name is Paula 
+
+    >>> say_my_name("", "")
+    My name is  
+
+    >>> say_my_name("")
+    My name is  
+
+    >>> say_my_name("", "Carvajal")
+    My name is  Carvajal
+
+    >>> say_my_name("Paula", "")
+    My name is Paula  
