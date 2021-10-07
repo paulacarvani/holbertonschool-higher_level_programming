@@ -17,13 +17,5 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEquals(max_integer([0, 1, 0]), 1)
         self.assertEquals(max_integer([8]), 8)
 
-    def test_wrong_type(self):
-        """Test Cases when Raises"""
-        with self.assertRaises(TypeError):
-            max_integer(None)
-
-        with self.assertRaises(TypeError):
-            max_integer(["Paula", 1, 2, 4, -3])
-
 if __name__ == '__main__':
     unittest.main()
