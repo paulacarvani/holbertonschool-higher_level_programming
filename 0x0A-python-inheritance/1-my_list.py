@@ -5,7 +5,5 @@ and sort the list created"""
 
 class MyList(list):
     """Class that inherits from class list"""
-
-
     def print_sorted(self):
         print(sorted(self))
