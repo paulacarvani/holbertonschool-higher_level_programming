@@ -9,4 +9,5 @@ def read_file(filename=""):
     reads in UTF8 and prints in stdout"""
 
     with open(filename, encoding="UTF8") as myfile:
-        print(myfile.read())
+        print(myfile.read(), end="")
+        myfile.close()
