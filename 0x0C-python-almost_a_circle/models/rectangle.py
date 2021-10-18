@@ -115,6 +115,6 @@ class Rectangle(Base):
             elif "height" in kwargs:
                 self.height = kwargs["height"]
             elif "x" in kwargs:
-                self.x = kwargs ["x"]
+                self.x = kwargs["x"]
             elif "y" in kwargs:
                 self.y = kwargs["y"]
