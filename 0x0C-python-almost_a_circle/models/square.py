@@ -24,3 +24,26 @@ class Square(Rectangle):
         """Update the __str__ to return a expected text"""
         return "[Square] ({}) {}/{} - {}"\
             .format(self.id, self.x, self.y, self.width)
+
+    def update(self, *args, **kwargs):
+        """Function for args and kwargs"""
+        if len(args) != 0:
+            for i, arg in enumerate(args):
+                if i == 0:
+                    self.id = arg
+                elif i == 1:
+                    self.size = arg
+                elif i == 2:
+                    self.x = arg
+                elif i == 3:
+                    self.y = arg
+
+        else:
+            if "id" in kwargs:
+                self.id = kwargs["id"]
+            if "size" in kwargs:
+                self.size = kwargs["size"]
+            if "x" in kwargs:
+                self.x = kwargs["x"]
+            if "y" in kwargs:
+                self.y = kwargs["y"]
