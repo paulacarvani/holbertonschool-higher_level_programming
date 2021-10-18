@@ -6,6 +6,7 @@ from models.base import Base
 class Rectangle(Base):
     """Class Rectangle"""
     def __init__(self, width, height, x=0, y=0, id=None):
+        """Construct"""
         self.width = width
         self.height = height
         self.x = x
@@ -19,6 +20,7 @@ class Rectangle(Base):
 
     @width.setter
     def width(self, value):
+        """Setter for width"""
         if type(value) is not int:
             raise TypeError("width must be an integer")
         if value <= 0:
@@ -32,6 +34,7 @@ class Rectangle(Base):
 
     @height.setter
     def height(self, value):
+        """Setter for height"""
         if type(value) is not int:
             raise TypeError("height must be an integer")
         if value <= 0:
@@ -45,6 +48,7 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, value):
+        """setter for x"""
         if type(value) is not int:
             raise TypeError("x must be an integer")
         if value < 0:
@@ -56,8 +60,9 @@ class Rectangle(Base):
         """Getter for y"""
         return self.__y
 
-    @x.setter
+    @y.setter
     def y(self, value):
+        """Setter for y"""
         if type(value) is not int:
             raise TypeError("y must be an integer")
         if value < 0:
@@ -83,5 +88,6 @@ class Rectangle(Base):
             print('#')
 
     def __str__(self):
+        """Update the function str to return the expected text"""
         return "[Rectangle] ({}) {}/{} - {}/{}"\
             .format(self.id, self.__x, self.__y, self.__width, self.__height)
