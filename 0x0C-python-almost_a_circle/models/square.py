@@ -22,5 +22,5 @@ class Square(Rectangle):
 
     def __str__(self):
         """Update the __str__ to return a expected text"""
-        return "[Square] ({} {}/{} - {}"\
+        return "[Square] ({}) {}/{} - {}"\
             .format(self.id, self.x, self.y, self.width)
