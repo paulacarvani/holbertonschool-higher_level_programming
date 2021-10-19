@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Module creates a Class Base"""
 import json
+from typing import Sequence
 
 
 class Base:
@@ -40,3 +41,13 @@ class Base:
         if json_string is None or json_string == "[]":
             return []
         return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        """returns an instance with all attributes already set"""
+        if (cls.__name__ == "Square"):
+            dummy = cls(2)
+        elif (cls.__name__ == "Rectangle"):
+            dummy = cls(2, 2)
+        dummy.update(**dictionary)
+        return dummy
