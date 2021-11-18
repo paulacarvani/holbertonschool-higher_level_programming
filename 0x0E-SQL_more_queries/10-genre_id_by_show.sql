@@ -1,6 +1,5 @@
 -- Import the database dump from hbtn_0d_tvshows to your MySQL server: download
-SELECT s.'title', g.'genre_id'
-    FROM tv_shows AS s
-        INNER JOIN tv_show_genres AS g
-        ON s.id = g.show_id
-    ORDER BY s.title, g.genre_id;
+SELECT tv_shows.title, genre_id FROM tv_show_genres
+INNER JOIN tv_genres ON tv_genres.id = genre_id
+LEFT JOIN tv_shows ON tv_shows.id = tv_show_genres.show_id
+ORDER by tv_shows.title, tv_show_genres.genre_id;
