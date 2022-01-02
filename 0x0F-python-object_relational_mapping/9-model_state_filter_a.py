@@ -26,5 +26,6 @@ def print_a_states(db):
     session.close()
     db[0].dispose()
 
+
 if __name__ == '__main__':
     print_a_states(init_sess())
