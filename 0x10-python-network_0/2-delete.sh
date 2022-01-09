@@ -1,3 +1,3 @@
 #!/bin/bash
-script that sends a DELETE request to the URL passed as the first argument
-curl -sX DELETE "$1"
+# Bash script that sends a DELETE request to the URL
+curl -sIX OPTIONS "$1" | awk -F': ' '/Allow/ { print $2 }'
